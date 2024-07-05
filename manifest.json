@@ -1,0 +1,8 @@
+{
+    "version": 1.0,
+    "files": [
+        "core.lua"
+    ],
+    "exec": "core.lua",
+    "cmpt": null
+}
