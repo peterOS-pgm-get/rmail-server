@@ -3,7 +3,7 @@ if _G.pgm.rmail_server then
 end
 
 local sha256 = pos.require("hash.sha256")
-local log = pos.require('logger')('/home/.pgmLog/rmail-server.log')
+local log = pos.Logger('rmail-server.log')
 log:info('Starting rmail-server')
 local cfg = {
     db = {
