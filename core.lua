@@ -175,16 +175,6 @@ local function getMailByUser(user)
     for _, el in pairs(r) do
         read[el.uuid] = true
     end
-    -- for _, uuid in pairs(uuids) do
-    --     s, r = db:run('SELECT uuid, time, to, from, subject FROM mail WHERE uuid="' .. uuid .. '"')
-    --     if not s then
-    --         log:error('DB error: ' .. r .. '; ' .. debug.traceback())
-    --         return nil
-    --     end
-    --     local m = r[1]
-    --     m.to = textutils.unserialiseJSON(m.to)
-    --     mail[uuid] = m
-    -- end
     return mail, read
 end
 
