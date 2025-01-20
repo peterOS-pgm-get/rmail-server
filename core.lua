@@ -136,7 +136,7 @@ end
 ---Get all mail for user
 ---@param user string Username
 ---@return RMail.Mail[]? mail
----@return { string: boolean }? read
+---@return { [string]: boolean }? read
 local function getMailByUser(user)
     local s, r = db:run('SELECT uuid FROM recipients WHERE user = "' .. user .. '@' .. cfg.hostname .. '"')
     if not s then
